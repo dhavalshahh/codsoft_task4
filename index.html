@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h2 class="navbar-logo"><a href="#">JobHunt</a></h2>
+        <div class="navbar-menu">
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#blog">Blogs</a>
+            <a href="#contect">Contact Me</a>
+            <a href="#">Sign In</a>
+        </div>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="header-title">FIND YOUR <br> <span>PERFECT JOB</span> <br> EASILY </h1>
+    </header>
+
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <input class="search-input" type="text" placeholder="Job titles or keyeords">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-box">
+        <div class="filter-dropdown">
+            <select class="filter-select" id="job-level" name="job-level">
+                <option>Job Level</option>
+                <option>Entry</option>
+                <option>Mid-Senior</option>
+                <option>Director</option>
+            </select>
+            <select class="filter-select" id="job-function" name="job-function">
+                <option>Job Function</option>
+                <option>IT</option>
+                <option>Management</option>
+                <option>Education</option>
+            </select>
+            <select class="filter-select" id="employment" name="employment">
+                <option>Employment Type</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Full Time</option>
+            </select>
+            <select class="filter-select" id="location" name="location">
+                <option>Locations</option>
+                <option>Remote</option>
+                <option>US</option>
+                <option>HOME</option>
+            </select>
+            <select class="filter-select" id="education" name="education">
+                <option>Education</option>
+                <option>High School</option>
+                <option>Bachelor's degree</option>
+                <option>Master's degree</option>
+            </select>
+        </div>
+        <div class="filter-chosen">
+            <div class="chosen-card">
+                Remote <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Full time <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Financial Tech <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Entry Level <i class="fas fa-times-circle"></i>
+            </div>
+        </div>
+    </div>
+
+    <section class="job-list" id="jobs">
+        <!-- <h1>JObs</h1> -->
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/Tesla.png" alt="">
+                <div class="job-details">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>We are hiring a Mechanical Engineer for Tesla.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/YouTube.png" alt="">
+                <div class="job-details">
+                    <h4>YouTube</h4>
+                    <h3>UI UX Designer</h3>
+                    <p>We are hiring for UI UX Designer for YouTube.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 23 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/Instagram.jpeg" alt="">
+                <div class="job-details">
+                    <h4>Instagram</h4>
+                    <h3>Business Development</h3>
+                    <p>We are hiring for Business Development position.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 40 min ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/Google.png" alt="">
+                <div class="job-details">
+                    <h4>Google</h4>
+                    <h3>Software Engineering</h3>
+                    <p>We are hiring for software engineering position.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted an hour ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img class="job-profile" src="Images/amazon.png" alt="">
+                <div class="job-details">
+                    <h4>Amazon</h4>
+                    <h3>Digital Marketing</h3>
+                    <p>We are hiring a Digital Marketing for Amazon .</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a class="label-a" href="#">HTML</a>
+                <a class="label-b" href="#">CSS</a>
+                <a class="label-c" href="#">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted an hour ago
+            </div>
+        </div>
+
+        <button class="job-more">More List</button>
+
+    </section>
+
+    <section class="featured" id="companies">
+        <h1 class="section-title">Featured Companies</h1>
+        <p>choose your dream company</p>
+        <div class="featured-wrapper">
+            <div class="featured-card">
+                <img class="featured-image" src="Images/amazon.png" alt="">
+                <p>Amazon</p>
+                <button class="featured-button">View 2 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="Images/Google.png" alt="">
+                <p>Google</p>
+                <button class="featured-button">View 1 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="Images/Instagram.jpeg" alt="">
+                <p>Instagram</p>
+                <button class="featured-button">View 3 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="Images/Tesla.png" alt="">
+                <p>Tesla</p>
+                <button class="featured-button">View 2 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="Images/YouTube.png" alt="">
+                <p>YouTube</p>
+                <button class="featured-button">View 2 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="Images/Facebook.png" alt="">
+                <p>FaceBook</p>
+                <button class="featured-button">View 4 jobs</button>
+            </div>
+            <div class="featured-card">
+                <img class="featured-image" src="Images/Apple.png" alt="">
+                <p>Apple</p>
+                <button class="featured-button">View 1 jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <h1 class="section-title">Career Advices</h1>
+        <p>Learn more career tips from company's recruiter</p>
+        <div class="blog-wrapper">
+            <div class="blog-card">
+                <img class="blog-image" src="Images/blog1.jpg" alt="">
+                <div class="blog-details">
+                    <span>2 june 2024</span>
+                    <h4>How to enjoy your work</h4>
+                    <p>Make an effort to surround yourself with a network of encouraging co-workers. To avoid anxiety,
+                        don't rush. Manage your
+                        stress by practising mindfulness, engaging in meditation, or finding a relaxing activity or
+                        interest....</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img class="blog-image" src="Images/blog1.jpg" alt="">
+                <div class="blog-details">
+                    <span>8 june 2024</span>
+                    <h4>Tips for technical interview</h4>
+                    <p>One highly effective technique for conducting technical interviews is to use a section of your
+                        actual production code.for example, Take a current piece of your
+                        production code and remove a section from a function...</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img class="blog-image" src="Images/blog1.jpg" alt="">
+                <div class="blog-details">
+                    <span>11 june 2024</span>
+                    <h4>Managing Time Effectively</h4>
+                    <p>Time management is important to help you prioritise better and increase your productivity. Good
+                        time management also makes you more intentional about how to invest your time. Managing your
+                        time helps you work smarter...</p>
+                    <hr class="divider">
+                    <a href="#" class="blog-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contect ">
+        <div class="footer-wrapper">
+            <h3>JobHunt</h3>
+            <p>abcdefghijklmnopqrstuvwxyz</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <h4>Contect Details</h4>
+            <a href="#">Email: dhaval1504shah@gmail.com</a>
+            <a href="#">Mobile No. : 9424080565</a>
+        </div>
+        <div class="footer-wrapper">
+            <h4>About</h4>
+            <a href="#blog">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">Get Inspired</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
